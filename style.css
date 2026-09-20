@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: playfair display;
     margin: 0;
     background-color: #f6a4df;
     color: #333;
@@ -44,11 +44,12 @@ p {
     background-color: #555;
 }
 #about {
-     max-width: 800px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
-    background-color: #f1b8e7;
+    background-color:#f599d9;
+    font: playfair display;
 }
 #about h2 {
     text-align: center;
@@ -56,6 +57,7 @@ p {
 }
 #about h3 {
     margin-top: 25px;
+    
 }
 #about p {
     line-height: 1.6;
@@ -85,7 +87,7 @@ p {
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(248, 194, 224);
 }
 
 .skill-card h3 {
