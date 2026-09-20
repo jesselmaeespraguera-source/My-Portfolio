@@ -57,3 +57,42 @@ p {
 #about h3 {
     margin-top: 25px;
 }
+#about p {
+    line-height: 1.6;
+}
+#about li {
+    margin: 8px 0;
+}
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 32px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 220px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
