@@ -43,3 +43,17 @@ p {
 .button:hover {
     background-color: #555;
 }
+#about {
+     max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f1b8e7;
+}
+#about h2 {
+    text-align: center;
+    font-size: 32px;
+}
+#about h3 {
+    margin-top: 25px;
+}
