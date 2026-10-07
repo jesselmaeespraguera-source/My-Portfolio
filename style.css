@@ -1,33 +1,86 @@
 body {
-    font-family: playfair display;
-    margin: 0;
-    background-color: #f6a4df;
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    background-color: #f388d5;
     color: #333;
 }
 
-.hero {
+.hero-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
     text-align: center;
-    padding: 80px 20px;
+    width: 100%;
+    margin-top: 80px;
 }
 
-.hero img {
+.profile-side {
+    text-align: center;
+}
+
+.hero-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "pic  intro"
+        "role .";
+        justify-content: center;
+    align-items: center;      /* pantay ang picture at name */
+    column-gap: 70px;
+    row-gap: 10px;
+    text-align: center;
+
+}
+.profile-pic {
+    grid-area: pic;
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
 }
 
+.intro-side {
+    grid-area: intro;
+     margin-top: 25px;
+}
+
+.role-side {
+    grid-area: role;
+    text-align: center;
+}
+
+.intro-side p {
+    text-align: center;   /* para nasa gitna ang description sa ilalim ng name */
+}
+.about-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   /* pareho ang sugod sa taas sa duha ka columns */
+    gap: 40px;
+}
+
+.about-columns > div {
+    flex: 1;                   /* pareho ang width sa duha */
+}
+
 h1 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.intro-side p {
+    text-align: left;
 }
 
 h2 {
-    color: #555;
+    color: #ea2b8a;
 }
 
 p {
     font-size: 18px;
+    text-align: center;
 }
 
 .button {
@@ -38,10 +91,12 @@ p {
     color: white;
     text-decoration: none;
     border-radius: 8px;
+    justify-content: center;
+
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #f55a93;
 }
 #about {
     max-width: 800px;
@@ -49,7 +104,6 @@ p {
     padding: 30px;
     border-radius: 10px;
     background-color:#f599d9;
-    font: playfair display;
 }
 #about h2 {
     text-align: center;
@@ -57,18 +111,21 @@ p {
 }
 #about h3 {
     margin-top: 25px;
-    
+    text-align: center;
 }
 #about p {
     line-height: 1.6;
 }
 #about li {
-    margin: 8px 0;
+    margin: 15px 0;
+    
 }
 #skills {
     padding: 50px 20px;
     text-align: center;
+
 }
+
 
 #skills h2 {
     font-size: 32px;
@@ -77,24 +134,26 @@ p {
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 15px;
+    flex-wrap: nowrap;
 }
 
 .skill-card {
-    width: 220px;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
+    width: 150px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #581041;
     border-radius: 10px;
-    background-color: rgb(248, 194, 224);
+    background-color: rgb(249, 191, 223);
 }
 
 .skill-card h3 {
-    font-size: 24px;
+    font-size: 15px;
+    color: #97417f;
 }
 
 .skill-card p {
     font-size: 16px;
     line-height: 1.5;
+    color: #f55a93;
 }
