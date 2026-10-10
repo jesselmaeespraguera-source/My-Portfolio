@@ -268,4 +268,85 @@ p {
     color: #ea2b8a;
 }
 
+#experience {
+    padding: 50px 20px;
+    text-align: center;
+}
 
+.table-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;         /* para ma-scroll sa phone */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(249, 191, 223);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #a21575;
+    text-align: left;
+}
+
+th {
+    background-color: #ea2b8a;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f599d9;
+}
+
+tbody tr:hover {
+    background-color: #f388d5;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0%;
+    font-family: allura;
+}
+.achievement-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Achievement-card {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: rgb(226, 102, 170);
+    border: 1px solid #d51b9a;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.4s;
+
+}
+
+.Achievement-card:hover {
+    transform: translateY(-5px);
+}
+.Achievement-info {
+    padding: 20px 30px 35px;
+    text-align: center;
+   font-family:cursive;
+   line-height: 2;
+} 
+.Achievement-info .tech {
+    color: #eb529c;
+}
+.achievements {
+    display:inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+}
