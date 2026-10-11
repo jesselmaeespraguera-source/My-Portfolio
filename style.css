@@ -1,25 +1,21 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;   /* para dili matabunan sa sticky nav */
+    scroll-padding-top: 100px;   /* para dili matabunan sa sticky nav */
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #f388d5;
-    color: #333;
+    color: #373535;
 }
 
-
-.hero-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    text-align: center;
-    width: 100%;
-    margin-top: 80px;
-}
 
 .profile-side {
     text-align: center;
@@ -37,13 +33,17 @@ body {
     row-gap: 10px;
     text-align: center;
 
+    width: 100%;
+    margin-top: 150px;
+
 }
 .profile-pic {
     grid-area: pic;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 35px;
 }
 
 .intro-side {
@@ -72,14 +72,18 @@ body {
 
 .navbar {
     position: sticky;
-    top: 0;
+    margin-top: 0;
+    padding-top: 20px;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
+    padding: 10px 15px;
     background-color: #b40e7c;
     column-width: auto;
+    border-radius: 3%;
+    flex-wrap: wrap;
+
 }
 
 .logo {
@@ -119,8 +123,10 @@ body {
 
 h1 {
     font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    -webkit-text-stroke: 1px #0e0e0e;
+    text-shadow: 2px 2px 3px rgba(88, 16, 65, 0.4);
 }
 
 .intro-side p {
@@ -129,8 +135,11 @@ h1 {
 
 h2 {
     color: #ea2b8a;
-    -webkit-text-stroke: #0a0303;
-    align-items: center;
+}
+
+H2 {
+   -webkit-text-stroke: 0.7px #313030;
+    text-shadow: 2px 3px 3px #121011;
 }
 
 p {
@@ -142,8 +151,8 @@ p {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #333;
-    color: white;
+    background-color: #474646;
+    color: rgb(227, 218, 218);
     text-decoration: none;
     border-radius: 8px;
     justify-content: center;
@@ -177,7 +186,13 @@ text-shadow: 2px 2px 3px rgba(88, 16, 65, 0.4);
     line-height: 1.6;
 }
 #about li {
-    margin: 15px 0;
+    margin: 10px 0; 
+    margin-top: 1px;
+    font-size: large;
+}
+#about ul {
+    display: inline-block;
+    margin-left: 130px;
     
 }
 #skills {
@@ -371,6 +386,7 @@ h3 {
     text-align: center;
 }
 #contact h2 {
+    font-size: 32px;
     color: 2px #ff9bdf !important;
    -webkit-text-stroke: 1px #000000;
     text-shadow: 2px 2px 3px rgba(88, 16, 65, 0.4);
