@@ -130,7 +130,7 @@ h1 {
 }
 
 .intro-side p {
-    text-align: left;
+    text-align: center;
 }
 
 h2 {
@@ -449,841 +449,142 @@ h3 {
 
 
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-    .hero-top {
-        grid-template-columns: minmax(0, 200px) minmax(0, 1fr);
-        grid-template-areas:
-            "pic intro"
-            "role role";
-        justify-content: center;
-        align-items: center;
-        column-gap: 25px;
-        row-gap: 15px;
-        margin-top: 70px;
-        padding: 0 20px;
-    }
-
-    .profile-pic {
-        width: 170px;
-        height: 170px;
-        margin-left: 0;
-    }
-
-    .intro-side {
-        margin-top: 0;
-        min-width: 0;
-    }
-
-    .intro-side h1 {
-        font-size: 32px;
-        overflow-wrap: anywhere;
-    }
-
-    .intro-side p {
-        text-align: center;
-    }
-
-    /* About section */
-    #about {
-        width: calc(100% - 30px);
-        padding: 25px;
-    }
-
-    .about-columns {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .about-columns > div {
-        min-width: 0;
-    }
-
-    #about ul {
-        margin-left: 20px;
-    }
-
-    /* Skills */
-    #skills {
-        padding: 35px 15px;
-    }
-
-    .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .skill-card {
-        width: 150px;
-        max-width: 100%;
-        margin: 0;
-    }
-
-    /* Projects */
-    #projects {
-        padding: 35px 15px;
-    }
-
-    .projects-container {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .project-card {
-        width: calc(50% - 15px);
-        min-width: 0;
-    }
-
-    /* Experience */
-    #experience {
-        padding: 35px 15px;
-    }
-
-    .table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    table {
-        min-width: 550px;
-    }
-
-    .achievement-container {
-        padding: 0 15px;
-    }
-
-    .Achievement-card {
-        width: 100%;
-        max-width: 650px;
-        height: auto;
-        min-height: 0;
-    }
-
-    .Achievement-info {
-        padding: 20px;
-        overflow-wrap: anywhere;
-    }
-
-    /* Contact */
-    .contact-form {
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        min-width: 0;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-
-    h1 {
-        font-size: 28px;
-        margin-top: 15px;
-    }
-
-    h2,
-    #about h2,
-    #skills h2,
-    #projects h2,
-    #experience h2,
-    #contact h2 {
-        font-size: 26px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    /* Home section */
-    .hero-top {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-areas:
-            "pic"
-            "intro"
-            "role";
-        justify-items: center;
-        gap: 12px;
-        margin-top: 35px;
-        padding: 0 15px;
-    }
-
-    .profile-pic {
-        width: 145px;
-        height: 145px;
-        margin-left: 0;
-    }
-
-    .intro-side {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .intro-side h1,
-    .intro-side p {
-        text-align: center;
-        overflow-wrap: anywhere;
-    }
-
-    .role-side {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* About section */
-    #about {
-        width: calc(100% - 24px);
-        margin: 25px auto;
-        padding: 20px 15px;
-    }
-
-    .about-columns {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .about-columns > div {
-        width: 100%;
-        min-width: 0;
-    }
-
-    #about ul {
-        display: block;
-        margin-left: 0;
-        padding-left: 25px;
-    }
-
-    #about li {
-        overflow-wrap: anywhere;
-    }
-
-    /* Skills */
-    #skills {
-        padding: 30px 12px;
-    }
-
-    .skills-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-    }
-
-    .skill-card {
-        width: 100%;
-        min-width: 0;
-        margin: 0;
-        padding: 12px 8px;
-        overflow-wrap: anywhere;
-    }
-
-    .skill-card h3 {
-        font-size: 14px;
-    }
-
-    .skill-card p {
-        font-size: 14px;
-    }
-
-    /* Projects */
-    #projects {
-        padding: 30px 12px;
-    }
-
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 350px;
-        min-width: 0;
-    }
-
-    .project-card img {
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .project-info {
-        padding: 15px;
-    }
-
-    /* Experience table */
-    #experience {
-        padding: 30px 12px;
-    }
-
-    .table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    table {
-        width: 100%;
-        min-width: 500px;
-    }
-
-    th,
-    td {
-        padding: 9px 10px;
-        font-size: 14px;
-    }
-
-    /* Achievements */
-    .achievement-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 0 12px;
-    }
-
-    .Achievement-card {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 10px auto;
-    }
-
-    .Achievement-info {
-        padding: 15px;
-        font-size: 15px;
-        line-height: 1.7;
-        overflow-wrap: anywhere;
-    }
-
-    .achievements {
-        display: block;
-        padding-left: 20px;
-    }
-
-    /* Contact form */
-    #contact {
-        padding: 30px 12px;
-    }
-
-    .contact-form {
-        width: 100%;
-        max-width: 100%;
-        padding: 18px 14px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        min-width: 0;
-        font-size: 16px;
-    }
-
-    .send-btn {
-        width: 100%;
-    }
-
-    /* Prevent accidental horizontal overflow */
-    img {
-        max-width: 100%;
-    }
-}
-
-/* TABLET AND PHONE NAVBAR */
 @media screen and (max-width: 768px) {
     .navbar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
         gap: 5px;
-        padding: 8px 10px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        margin: 0;
-    }
-
-    .logo img {
-        width: 45px;
-        height: 45px;
-        object-fit: cover;
-        border-radius: 50%;
+        padding: 8px;
     }
 
     .nav-links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        gap: 8px;
+        flex-wrap: wrap;
         justify-content: flex-end;
-        align-items: center;
-        gap: clamp(2px, 1.5vw, 15px);
-        margin: 0;
-        padding: 0;
-        min-width: 0;
-    }
-
-    .nav-links li {
-        flex-shrink: 1;
-        min-width: 0;
     }
 
     .nav-links a {
-        display: block;
-        padding: 6px clamp(2px, 0.8vw, 8px);
-        font-size: clamp(8px, 1.8vw, 14px);
-        white-space: nowrap;
-    }
-}
-
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 5px;
-        padding: 8px 10px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        margin: 0;
-    }
-
-    .logo img {
-        width: 45px;
-        height: 45px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        gap: clamp(2px, 1vw, 10px);
-        margin: 0;
-        padding: 0;
-        min-width: 0;
-    }
-
-    .nav-links li {
-        flex-shrink: 1;
-        min-width: 0;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 6px clamp(1px, 0.5vw, 6px);
-        font-size: clamp(8px, 1.8vw, 14px);
-        white-space: nowrap;
+        font-size: 13px;
+        padding: 5px;
     }
 
     .hero-top {
-        grid-template-columns: minmax(0, 200px) minmax(0, 1fr);
-        grid-template-areas:
-            "pic intro"
-            "role role";
-        justify-content: center;
-        align-items: center;
-        column-gap: 25px;
-        row-gap: 15px;
+        column-gap: 20px;
         margin-top: 70px;
-        padding: 0 20px;
     }
 
     .profile-pic {
-        width: 170px;
-        height: 170px;
+        width: 160px;
+        height: 160px;
         margin-left: 0;
     }
 
-    .intro-side {
-        margin-top: 0;
-        min-width: 0;
-    }
-
-    .intro-side h1 {
-        font-size: 32px;
-        overflow-wrap: anywhere;
-    }
-
-    .intro-side p {
-        text-align: center;
-    }
-
-    #about {
-        width: calc(100% - 30px);
-        padding: 25px;
-    }
-
     .about-columns {
-        flex-wrap: wrap;
         gap: 20px;
     }
 
-    .about-columns > div {
-        min-width: 0;
-    }
-
-    #about ul {
-        margin-left: 20px;
-    }
-
-    #skills {
-        padding: 35px 15px;
-    }
-
-    .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .skill-card {
-        width: 150px;
-        max-width: 100%;
-        margin: 0;
-    }
-
-    #projects {
-        padding: 35px 15px;
-    }
-
+    .skills-container,
     .projects-container {
         flex-wrap: wrap;
-        gap: 15px;
     }
 
-    .project-card {
-        width: calc(30% - 10px);
-        min-width: 0;
-    }
-
-    /* EXPERIENCE SECTION */
-    #experience {
-        padding: 35px 15px;
-    }
-
-    .table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    table {
-        min-width: 550px;
-    }
-
-    .achievement-container {
-        padding: 0 15px;
-    }
-
-    .Achievement-card {
-        width: 100%;
-        max-width: 650px;
-        height: auto;
-        min-height: 0;
-    }
-
-    .Achievement-info {
-        padding: 20px;
-        overflow-wrap: anywhere;
-    }
-
-    /* CONTACT SECTION */
+    .Achievement-card,
     .contact-form {
         width: 100%;
-        max-width: 600px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        min-width: 0;
+        max-width: 100%;
+        height: auto;
     }
 }
 
 
-/* ========================================
-   MOBILE PHONE RESPONSIVE DESIGN
-   Screen width: 480px and below
-   ======================================== */
 @media screen and (max-width: 480px) {
-
-    /* NAVIGATION BAR */
     .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         flex-wrap: nowrap;
         gap: 3px;
-        padding: 8px 6px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        margin: 0;
+        padding: 6px;
     }
 
     .logo img {
         width: 40px;
         height: 40px;
-        object-fit: cover;
-        border-radius: 50%;
     }
 
     .nav-links {
-        display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 1px;
-        margin: 0;
-        padding: 0;
-        min-width: 0;
-    }
-
-    .nav-links li {
-        flex-shrink: 1;
-        min-width: 0;
+        gap: 2px;
     }
 
     .nav-links a {
-        display: block;
-        padding: 6px 2px;
         font-size: clamp(7px, 2.2vw, 11px);
+        padding: 4px 2px;
         white-space: nowrap;
     }
 
-    /* GENERAL TEXT */
-    h1 {
-        font-size: 28px;
-        margin-top: 15px;
-    }
-
-    h2,
-    #about h2,
-    #skills h2,
-    #projects h2,
-    #experience h2,
-    #contact h2 {
-        font-size: 26px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    /* HOME SECTION */
     .hero-top {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-areas:
-            "pic"
-            "intro"
-            "role";
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
         gap: 12px;
         margin-top: 35px;
-        padding: 0 15px;
     }
 
     .profile-pic {
         width: 145px;
         height: 145px;
-        margin-left: 0;
     }
 
     .intro-side {
-        width: 100%;
         margin-top: 0;
     }
 
-    .intro-side h1,
-    .intro-side p {
-        text-align: center;
-        overflow-wrap: anywhere;
-    }
-
-    .role-side {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* ABOUT SECTION */
-    #about {
-        width: calc(100% - 24px);
-        margin: 25px auto;
-        padding: 20px 15px;
+    h1 {
+        font-size: 28px;
     }
 
     .about-columns {
         flex-direction: column;
-        gap: 20px;
     }
 
-    .about-columns > div {
-        width: 100%;
-        min-width: 0;
+    #about {
+        width: calc(100% - 20px);
+        padding: 20px 15px;
     }
 
     #about ul {
-        display: block;
         margin-left: 0;
         padding-left: 25px;
-    }
-
-    #about li {
-        overflow-wrap: anywhere;
-    }
-
-    /* SKILLS SECTION */
-    #skills {
-        padding: 30px 12px;
     }
 
     .skills-container {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
     }
 
-    .skill-card {
+    .skill-card,
+    .project-card {
         width: 100%;
         min-width: 0;
         margin: 0;
-        padding: 12px 8px;
-        overflow-wrap: anywhere;
-    }
-
-    .skill-card h3 {
-        font-size: 14px;
-    }
-
-    .skill-card p {
-        font-size: 14px;
-    }
-
-    /* PROJECTS SECTION */
-    #projects {
-        padding: 30px 12px;
     }
 
     .projects-container {
         flex-direction: column;
         align-items: center;
-        gap: 18px;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 350px;
-        min-width: 0;
-    }
-
-    .project-card img {
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .project-info {
-        padding: 15px;
-    }
-
-    /* EXPERIENCE TABLE */
-    #experience {
-        padding: 30px 12px;
     }
 
     .table-wrapper {
-        width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    table {
-        width: 100%;
-        min-width: 500px;
-    }
-
-    th,
-    td {
-        padding: 9px 10px;
-        font-size: 14px;
-    }
-
-    /* ACHIEVEMENTS */
-    .achievement-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 0 12px;
-    }
-
-    .Achievement-card {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 10px auto;
     }
 
     .Achievement-info {
         padding: 15px;
         font-size: 15px;
-        line-height: 1.7;
-        overflow-wrap: anywhere;
-    }
-
-    .achievements {
-        display: block;
-        padding-left: 20px;
-    }
-
-    /* CONTACT SECTION */
-    #contact {
-        padding: 30px 12px;
     }
 
     .contact-form {
-        width: 100%;
-        max-width: 100%;
-        padding: 18px 14px;
+        padding: 15px;
     }
 
     .contact-form input,
     .contact-form textarea {
         width: 100%;
         min-width: 0;
-        font-size: 16px;
-    }
-
-    .send-btn {
-        width: 100%;
-    }
-
-    /* PREVENT HORIZONTAL OVERFLOW */
-    img {
-        max-width: 100%;
     }
 }
