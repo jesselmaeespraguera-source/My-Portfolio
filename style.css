@@ -588,3 +588,15 @@ h3 {
         min-width: 0;
     }
 }
+
+ footer {
+    background-color: #6b0648;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+
+}
