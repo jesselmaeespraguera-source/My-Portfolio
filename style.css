@@ -258,7 +258,7 @@ text-shadow: 2px 2px 3px rgba(88, 16, 65, 0.4);
 }
 #experience h2 {
     font-size: 32px;
-    color: 2px #ff9bdf !important;
+    color: #ff9bdf !important;
    -webkit-text-stroke: 1px #000000;
    text-shadow: 2px 2px 3px rgba(88, 16, 65, 0.4);
 }
@@ -346,7 +346,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 15px;
+    padding: 7px 13px;
     background-color: #b40e7c;
     flex-wrap: wrap;
     gap: 10px;
@@ -595,7 +595,7 @@ h3 {
 
  footer {
     background-color: #6b0648;
-    padding: 20px;
+    padding: 10px;
 }
 
 footer p {
