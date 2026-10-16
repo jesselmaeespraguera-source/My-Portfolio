@@ -30,7 +30,7 @@ body {
         "pic  intro"
         "role .";
         justify-content: center;
-    align-items: center;      /* pantay ang picture at name */
+    align-items: center;      
     column-gap: 70px;
     row-gap: 10px;
     text-align: center;
@@ -59,7 +59,7 @@ body {
 }
 
 .intro-side p {
-    text-align: center;   /* para nasa gitna ang description sa ilalim ng name */
+    text-align: center;   /* para nasa tunga ang description sa ilalom sa name */
 }
 .about-columns {
     display: flex;
